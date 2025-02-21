@@ -1,6 +1,7 @@
 package Screens;
 import io.appium.java_client.AppiumBy;
 import io.appium.java_client.android.AndroidDriver;
+import io.qameta.allure.Step;
 import org.openqa.selenium.By;
 
 public class P01_HomePage {
@@ -17,8 +18,8 @@ public class P01_HomePage {
     private final By genderOption = By.id("com.androidsample.generalstore:id/radioMale");
     private final By btnLetsShop = By.id("com.androidsample.generalstore:id/btnLetsShop");
 
-    // method for navigate to Products page
-    public P02_ProductsPage navigateToProductsPage(String username) {
+    // method for select country and add the username to switch for product page
+    public P02_ProductsPage fillForm(String username) {
         androidDriver.findElement(dropDown).click();
         androidDriver.findElement(AppiumBy.androidUIAutomator(
                 "new UiScrollable(new UiSelector()." +

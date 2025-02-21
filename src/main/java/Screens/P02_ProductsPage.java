@@ -17,8 +17,8 @@ public class P02_ProductsPage {
     private final By cartIcon = By.xpath("//*[@resource-id='com.androidsample.generalstore:id/appbar_btn_cart']");
 
 
-    // method for navigate to cart page
-    public P03_CartPage navigateToCartPage() {
+    // method for add the two products to cart page
+    public P03_CartPage addProductsToCartPage() {
         androidDriver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
         androidDriver.findElement(first_addtocart_btn).click();
         androidDriver.findElement(second_addtocart_btn).click();

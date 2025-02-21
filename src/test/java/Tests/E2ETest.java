@@ -27,10 +27,10 @@ public class E2ETest extends BaseTest {
     dataReader.reader();
 
     homePage = new P01_HomePage(androidDriver);
-    homePage.navigateToProductsPage(dataReader.name);
+    homePage.fillForm(dataReader.name);
 
     productsPage = new P02_ProductsPage(androidDriver);
-    productsPage.navigateToCartPage();
+    productsPage.addProductsToCartPage();
 
     cartPage = new P03_CartPage(androidDriver);
     cartPage.productIsDisplayed();
