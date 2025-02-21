@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="General-store Suite">
+    <test verbose="2" preserve-order="true" name="Tests">
+        <classes>
+            <class name="Tests.E2ETest" >
+            <methods>
+                <include name="e2EScenario"/>
+            </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
